@@ -1,133 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset = "UTF - 8">
-        <meta name = "viewport"
-        content = "width = device - width, initial - scale = 1.0">
-        <title>
-            My Portfolio
-         </title>
-         <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: 0;  border-box
-                font-family: Arial, sans=serif;
-            }
-            body{
-                background: #f4f4f4
-                color: #333;
-                line-height: 1.6;
-            }
-            header {
-                background: #007BFF;
-                color: #fff;
-                padding: 20px o;
-                text-align: center;
-            }
-            header h1 {
-                font-size: 2.5em;
-            }
-            header h2 {
-                font-size: 1.2em;
-            }
-            nav {
-                background: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
-            nav a {
-                color: #fff;
-                margin: 0 15px;
-                text-decoration: navy;
-                font-weight: bold;
-            }
-            nav a:hover {
-                color: #007BFF;
-            }
-            section {
-                padding: 20px;
-                max-width: 900px;
-                margin: auto;
-            }
-            section h2 {
-                text-align: center;
-                margin-bottom: 15px;
-                color: #007BFF;
-            }
-            projects {
-                display: grid;
-                grid-template-columns:auto
-                repeat(auto-fit, minmax(250px, 1fr));
-                gap: 20px;
-            }
-            project {
-                background: #fff;
-                padding: 15px;
-                border-radius: 8px;
-                box-shadow: 0 2px 5px
-                rgba(0,0,0,0.1);
-            }
-            project h3 {
-                margin-bottom: 10px;    
-            }
-            footer {
-                background: #333;
-                color: #fff;
-                text-align: center;
-                padding: 15px 0;
-                margin-top: 20px;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        header h2 {
+            font-size: 1.2em;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #007BFF;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project h3 {
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Naomie Wanja</h1>
+        <p>Web Developer / Designer / Programmer</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-         </style>
-          </head>
-    <body>
-        <header>
-            <h1>
-                Naomie Wanja </h1>
-                <p> Web developer/ Designer/ Programmer</p>
-        </header>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Naomie, a passionate developer with skills in HTML, CSS, JavaScript, and more. This portfolio showcases some of my best work.</p>
+    </section>
 
-        <section id="about">
-            <h2> About me</h2>
-            <p> Hello! I'm Naomie, a passionate developer with skills in HTML, CSS,
-                JavaScript, and more. This portfolio showcases some of my best work.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2> My projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3> Portfolio website</h3>
-                    <p> A personal portfolio website to showcase my projects and skills</p>
-                </div>
-            <div class="project"> 
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website to showcase my projects and skills.</p>
+            </div>
+            <div class="project">
                 <h3>Blog Design</h3>
-                <p> A responsive blog template created using HTML, CSS, AND JavaScript</p>
+                <p>A responsive blog template created using HTML, CSS, and JavaScript.</p>
             </div>
             <div class="project">
                 <h3>Online Store</h3>
-                <p>An e-commerce website with a shopping cart and payment intergration</p>
+                <p>An e-commerce website with a shopping cart and payment integration.</p>
             </div>
-            </div>
-            </section>
+        </div>
+    </section>
 
-            <section id="Contact">
-                <h2>Contact me</h2>
-                <p> Email: <a
-                href="mailto: Eyohgirl@gmail.com">Eyohgirl@gmail.com</a></p>
-                <p>Phone: +254 789 451 036</p>
-            </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:Eyohgirl@gmail.com">Eyohgirl@gmail.com</a></p>
+        <p>Phone: +254 789 451 036</p>
+    </section>
 
-            <footer>
-                <p>&copy; 2025 Eyoh Girl. All rights reserved.</p>
-            </footer>
-    </body>
+    <footer>
+        <p>&copy; 2025 Eyoh Girl. All rights reserved.</p>
+    </footer>
+</body>
 </html>
